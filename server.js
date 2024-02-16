@@ -22,6 +22,7 @@ app.get("/", (req, res) => {
 app.use("/api/v1/user", userroutes);
 
 //cpp routes
+// <<<<<<< main
 app.use("/api/v1/cpp", cpproutes);
 
 const MONGO_URL = process.env.MONGO_URL;
@@ -35,3 +36,11 @@ mongoose
 		console.log(`Connected to mongob..`);
 	})
 	.catch((err) => console.log(err));
+// =======
+// app.use("/api/v1/cpp",cpproutes)
+
+// const PORT = 8000;
+// app.listen(PORT, () => {
+//   console.log(`Server Run on ${PORT}`);
+// });
+// >>>>>>> main
