@@ -41,7 +41,7 @@ router.put("/update/:id", async (req, res) => {
     );
 
     if (!response) {
-      return res.status(400).json({ error: "Student Not Found" });
+      return res.status(400).json({ error: "Cpp Not Found" });
     }
     console.log("data updated");
     res.status(200).json(response);
@@ -51,5 +51,22 @@ router.put("/update/:id", async (req, res) => {
   }
 });
 //for  delete the leacture by id
+router.delete('/delete/:id',async(req,resp) => {
+  try{
+      const studentId = req.params.id
+
+      const response = await Cpp.findByIdAndDelete(studentId)
+
+      if (!response) {
+          return resp.status(404).json({ error: 'Cpp Not Found' })
+      }
+      console.log('data deleted successfully')
+      resp.status(200).json({message:'Student Deleted Successfully'})
+
+  }catch(err){
+      console.log(err)
+      resp.status(500).json({ error: 'Internal Server Error' })
+  }
+})
 
 module.exports = router;
