@@ -6,10 +6,6 @@ const CppSchema = new mongoose.Schema({
     required: true,
     unique:true
   },
-  time: {
-    type: Date,
-    default: Date.now,
-  },
   Description: {
     type: String,
     default: "CPP Lecture",

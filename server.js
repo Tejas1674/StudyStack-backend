@@ -36,11 +36,4 @@ mongoose
 		console.log(`Connected to mongob..`);
 	})
 	.catch((err) => console.log(err));
-// =======
-// app.use("/api/v1/cpp",cpproutes)
 
-// const PORT = 8000;
-// app.listen(PORT, () => {
-//   console.log(`Server Run on ${PORT}`);
-// });
-// >>>>>>> main

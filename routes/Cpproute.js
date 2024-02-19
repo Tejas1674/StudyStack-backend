@@ -26,28 +26,7 @@ router.post("/addcpp", async (req, res) => {
 });
 
 //for update  the lecture by day
-// <<<<<<< main
-// router.put("/cpp/update/:day", async (req, res) => {
-// 	try {
-// 		const updatedCpp = await Cpp.findOneAndUpdate(
-// 			{ day: req.params.day },
-// 			{
-// 				$set: {
-// 					day: req.body.day,
-// 					time: req.body.time,
-// 					Description: req.body.Description,
-// 					videoLink: req.body.videoLink,
-// 					title: req.body.title,
-// 				},
-// 			},
-// 			{ new: true }
-// 		);
 
-// 		res.json(updatedCpp);
-// 	} catch (err) {
-// 		res.status(500).json({ message: err.message });
-// 	}
-// =======
 router.put("/update/:id", async (req, res) => {
   try {
     const studentId = req.params.id;
@@ -71,7 +50,7 @@ router.put("/update/:id", async (req, res) => {
     console.log(err);
     res.status(500).json({ error: "Internal Server Error" });
   }
-// >>>>>>> main
+
 });
 //for  delete the leacture by id
 

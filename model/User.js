@@ -1,7 +1,7 @@
 // model/User.js
-const Mongoose = require("mongoose")
+const Mongoose = require("mongoose");
 const UserSchema = new Mongoose.Schema({
-  username: {
+  prnno: {
     type: String,
     unique: true,
     required: true,
@@ -11,18 +11,19 @@ const UserSchema = new Mongoose.Schema({
     minlength: 6,
     required: true,
   },
-  firstname:{
-    type:String,
-    required:true,
+  firstname: {
+    type: String,
+    required: true,
   },
-  lastname:{
-    type:String,
-    required:true,
+  lastname: {
+    type: String,
+    required: true,
   },
-  email:{
-    type:String,
-    required:true,
+  email: {
+    type: String,
+    required: true,
   },
-})
-const User = Mongoose.model("user", UserSchema)
-module.exports = User
+});
+
+const User = Mongoose.model("user", UserSchema);
+module.exports = User;
