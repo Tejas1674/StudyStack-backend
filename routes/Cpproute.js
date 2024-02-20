@@ -9,7 +9,7 @@ router.get("/:id", async (req, res) => {
   try {
     // Extract the studentId from the request parameters
     const studentId = req.params.id;
-    console.log(studentId);
+    //console.log(studentId);
 
     // Attempt to find a Cpp document by its id using a model (presumably mongoose)
     const response = await Cpp.findById(studentId);
