@@ -6,6 +6,8 @@ const {jwtAuthMiddleware} = require('../jwt.js')
 const router = Router();
 //for all cpp lecture
 router.get("/",jwtAuthMiddleware, getcpp);
+
+//get leacture by id
 router.get("/:id", async (req, res) => {
   try {
     // Extract the studentId from the request parameters

@@ -19,11 +19,11 @@ app.get("/", (req, res) => {
 	// throw new Error("Fake Error generated for testing purpose");
 	res.send("Hello Node API Learning");
 });
+
 //user routes
 app.use("/api/v1/user", userroutes);
 
 //cpp routes
-// <<<<<<< main
 app.use("/api/v1/cpp", cpproutes);
 
 const MONGO_URL = process.env.MONGO_URL;
