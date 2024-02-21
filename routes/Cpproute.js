@@ -1,10 +1,11 @@
 const { Router } = require("express");
 const Cpp = require("../model/Cpp.js");
 const { getcpp } = require("../Controller/CppContoller.js");
+const {jwtAuthMiddleware} = require('../jwt.js')
 
 const router = Router();
 //for all cpp lecture
-router.get("/", getcpp);
+router.get("/",jwtAuthMiddleware, getcpp);
 router.get("/:id", async (req, res) => {
   try {
     // Extract the studentId from the request parameters
