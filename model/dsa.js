@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const CppSchema = new mongoose.Schema({
+const dsaSchema = new mongoose.Schema({
   day: {
     type: Number,
     required: true,
@@ -8,7 +8,7 @@ const CppSchema = new mongoose.Schema({
   },
   Description: {
     type: String,
-    default: "CPP Programming Lecture",
+    default: "Data Structures and Algorithms Lecture",
   },
   videoLink: {
     type: String,
@@ -21,7 +21,7 @@ const CppSchema = new mongoose.Schema({
 });
 
 // Creating a unique index on the 'day' field
-CppSchema.index({ day: 1 }, { unique: true });
+dsaSchema.index({ day: 1 }, { unique: true });
 
-const Cpp = mongoose.model("cpp", CppSchema);
-module.exports = Cpp;
+const dsa = mongoose.model("dsa", dsaSchema);
+module.exports = dsa;
