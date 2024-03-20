@@ -25,7 +25,7 @@ Studystack is a platform featuring a comprehensive collection of recorded lectur
 - MongoDB installed and running
 
 ### Data Model
-    ![Data Model](https://drive.google.com/file/d/1EQ7mSwmHnO0dOug85taej4XZ9RZnwt1_/view?usp=sharing)
+![Data Model](https://drive.google.com/file/d/1EQ7mSwmHnO0dOug85taej4XZ9RZnwt1_/view?usp=sharing)
 
 
 ### Installation
