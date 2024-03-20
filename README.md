@@ -1,13 +1,14 @@
 # Study Stack 
 Studystack is a platform featuring a comprehensive collection of recorded lectures, conveniently organized into modules for easy access and playback.
 ## Learning Management System
+##Backend Feature 
 ### For Backend Technology Use :
 - Node Js
 - Express Js
 - MongoDB
 
 ## Dependencies
-- **axios :** HTTP client for making requests.
+- **Axios:** HTTP client for making requests.
 - **bcryptjs:** Library for hashing and salting passwords.
 - **cors:** Middleware for enabling CORS in Express.js.
 - **dotenv :** Load environment variables from a `.env` file.
@@ -22,6 +23,10 @@ Studystack is a platform featuring a comprehensive collection of recorded lectur
 
 - Node.js installed
 - MongoDB installed and running
+
+### Data Model
+    ![Data Model](https://drive.google.com/file/d/1EQ7mSwmHnO0dOug85taej4XZ9RZnwt1_/view?usp=sharing)
+
 
 ### Installation
 
